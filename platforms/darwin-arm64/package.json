@@ -1,5 +1,5 @@
 {
-    "name": "@ffmpeg-installer/darwin-arm64",
+    "name": "@ffmpeg-auto-installer/darwin-arm64",
     "version": "4.1.5",
     "description": "Mac OS X FFmpeg binary used by ffmpeg-installer",
     "homepage": "https://www.osxexperts.net/",
@@ -8,6 +8,11 @@
       "prepublishOnly": "npm test",
       "postinstall": "chmod u+x ffmpeg",
       "upload": "npm --userconfig=../../.npmrc publish --access public"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jeanneze/ffmpeg-installer.git",
+      "directory": "platforms/darwin-arm64"
     },
     "keywords": [
       "ffmpeg",

@@ -1,5 +1,5 @@
 {
-  "name": "@ffmpeg-installer/linux-ia32",
+  "name": "@ffmpeg-auto-installer/linux-ia32",
   "version": "4.1.0",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
@@ -8,6 +8,11 @@
     "prepublishOnly": "npm test",
     "postinstall": "chmod u+x ffmpeg",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanneze/ffmpeg-installer.git",
+    "directory": "platforms/linux-ia32"
   },
   "keywords": [
     "ffmpeg",
@@ -21,7 +26,7 @@
   "cpu": [
     "ia32"
   ],
-  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "author": "Jeanneze <46290643@qq.com>",
   "license": "GPLv3",
   "ffmpeg": "20181210-g0e8eb07980"
 }

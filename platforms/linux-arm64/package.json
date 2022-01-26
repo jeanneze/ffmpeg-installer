@@ -1,5 +1,5 @@
 {
-  "name": "@ffmpeg-installer/linux-arm64",
+  "name": "@ffmpeg-auto-installer/linux-arm64",
   "version": "4.1.4",
   "description": "Linux FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
@@ -8,6 +8,11 @@
     "prepublishOnly": "npm test",
     "postinstall": "chmod u+x ffmpeg",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanneze/ffmpeg-installer.git",
+    "directory": "platforms/linux-arm64"
   },
   "keywords": [
     "ffmpeg",
@@ -22,7 +27,7 @@
   "cpu": [
     "arm64"
   ],
-  "author": "Luis Antonio González <luisangonzazlez@gmail.com>",
+  "author": "Jeanneze <46290643@qq.com>",
   "license": "GPLv3",
   "ffmpeg": "20190605-gd81913e680"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@ffmpeg-installer/win32-x64",
+  "name": "@ffmpeg-auto-installer/win32-x64",
   "version": "4.1.0",
   "description": "Windows FFmpeg binary used by ffmpeg-installer",
   "homepage": "https://ffmpeg.zeranoe.com/builds/win64/static/",
@@ -7,6 +7,11 @@
     "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
     "prepublishOnly": "npm test",
     "upload": "npm --userconfig=../../.npmrc publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanneze/ffmpeg-installer.git",
+    "directory": "platforms/win32-x64"
   },
   "keywords": [
     "ffmpeg",
@@ -20,7 +25,7 @@
   "cpu": [
     "x64"
   ],
-  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "author": "Jeanneze <46290643@qq.com>",
   "license": "GPLv3",
   "ffmpeg": "20181217-f22fcd4"
 }
